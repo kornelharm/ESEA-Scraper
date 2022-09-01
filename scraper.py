@@ -3,6 +3,7 @@ from selenium.webdriver.chrome.options import Options
 import undetected_chromedriver as uc
 import json
 import time
+from objects import *
 
 # Initializes chromium web driver used for data retrieval
 def initializeDriver():

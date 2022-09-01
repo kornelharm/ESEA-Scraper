@@ -1,7 +1,7 @@
 import time
 
 # Used for timing 
-class stopwatch:
+class Stopwatch:
 	def __init__(self, startTime=time.time()):
 		self.currTime = startTime
 
