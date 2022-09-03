@@ -37,4 +37,5 @@ matches = scraper.get_team_matches(driver, teamID)
 count = 1
 for match in matches:
 	print(f"Match #{count}: {match.date}")
+	count += 1
 ```
