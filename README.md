@@ -2,7 +2,9 @@
 
 ### **Overview**
 
-This is a project aimed towards gathering various sets of information from ESEA's website for research, scheduling and other processing.
+This is a project aimed towards gathering various sets of information from ESEA's website for research, scheduling and other processing.  
+
+*Note: this project's purpose is not to rebuild ESEA's database, but to give sufficient room for other projects to be built. The limits of this code and the information retrieved will resemble what has been deemed valuable for later use*
 
 ### **Goals**
 
