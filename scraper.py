@@ -110,7 +110,13 @@ def get_team_matches(driver, teamID):
 				_match.team2 = team2
 				_match.team1 = team1
 
-		_match.map = (match["map"]["id"] if "id" in match["map"] else "TBD") if "map" in match else None
+		if("map" in match):
+			if(match["map"] == "Multiple"):
+				_match.map = "Multiple"
+			elif("id" in match["map"]):
+				_match.map = match["map"]["id"]
+			else:
+				_match.map = "TBD"
 		_match.result = ("WON" if match["result"] == 1 else "LOST") if "result" in match else None
 		_match.finalScore = match["score"] if "score" in match else None
 		_match.date = match["date"]
