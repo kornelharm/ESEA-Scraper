@@ -16,6 +16,15 @@ def initializeDriver():
 
 # Takes a team's ID and returns an API link to their match information
 def team_id_to_matches(teamID):
+	"""
+	Return the API URL for the team's respective matches
+
+	Arguments: 
+		`teamID (str)` : numerical ID for a team
+
+	Returns: 
+		`str` : API URL to the team's matches
+	"""
 	return f"https://play.esea.net/api/teams/{teamID}/matches"
 
 # Takes a team's ID and returns an API link to their match information
@@ -73,3 +82,18 @@ def get_team_matches(driver, teamID):
 		result.append(_match)
 
 	return result
+
+# TODO: Implement
+def get_match_information(driver, matchID):
+	"""
+	Retrieves the advanced information for a specific
+	To retrieve the matchID, see `get_team_matches()`
+
+	Arguments: 
+		`driver (Chrome)` : Chromium web driver instance
+		`teamID (str)` : numerical ID for a team
+
+	Returns: 
+		`list[DetailedMatch]` : List with elements representing a match
+	"""
+	pass
