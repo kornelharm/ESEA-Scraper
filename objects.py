@@ -43,6 +43,18 @@ class DetailedMatch:
 	""" 
 	Class representing a match in reference to a match page.
 	Depending on their use, not all fields are guaranteed to exist
+
+	Variables:
+		`id (str)` : numerical ID for the match
+		`map (str)` : name of the map played
+		`team1 (Team)` : Team designated as "home"
+		`team2 (Team)` : Team designated as "away"
+		`tSideStart (Team)` : Team which started on the T side
+		`ctSideStart (Team)` : Team which started on the CT side
+		`timeStarted (str)` : GMT timestamp of the match start
+		`timeFinished (str)` : GMT timestamp of the match end
+		`halfScore (str)` : The score at halftime
+		`finalScore (str)` : The score once the game concludes
 	"""
 	def __init__(self):
 		self.id : str = None
