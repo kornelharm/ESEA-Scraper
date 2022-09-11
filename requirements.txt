@@ -1,3 +1,6 @@
 beautifulsoup4==4.11.1
+google_api_python_client==2.60.0
+google_auth_oauthlib==0.5.2
+protobuf==4.21.5
 selenium==4.4.3
 undetected_chromedriver==3.1.5.post4
